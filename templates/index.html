@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python History Tour - From 2.0.1 to 3.14</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="python-logo">🐍</div>
+            <h1 class="title">The Evolution of Python</h1>
+            <p class="subtitle">An Interactive Journey from Version 2.0.1 (2001) to 3.14 (2025)</p>
+            <p class="subtitle-small">24 Years of Innovation, Performance, and Elegance</p>
+        </header>
+
+        <nav class="navigation">
+            <button class="nav-btn active" data-section="timeline">📅 Timeline</button>
+            <button class="nav-btn" data-section="comparison">⚡ Code Comparison</button>
+            <button class="nav-btn" data-section="statistics">📊 Statistics</button>
+        </nav>
+
+        <!-- Timeline Section -->
+        <section id="timeline-section" class="section active">
+            <div class="timeline-controls">
+                <div class="era-filter">
+                    <button class="filter-btn active" data-era="all">All Versions</button>
+                    <button class="filter-btn" data-era="Python 2">Python 2.x</button>
+                    <button class="filter-btn" data-era="Python 3">Python 3.x</button>
+                </div>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <!-- Timeline items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Code Comparison Section -->
+        <section id="comparison-section" class="section">
+            <div class="comparison-header">
+                <h2>🔥 How Far We've Come: Python 2.0.1 vs 3.14</h2>
+                <p>The same functionality, 24 years apart. See the dramatic improvements in readability, safety, and
+                    expressiveness.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="code-panel python-2">
+                    <div class="panel-header">
+                        <h3>Python 2.0.1 (2001)</h3>
+                        <span class="version-badge old">Legacy</span>
+                    </div>
+                    <div class="code-container">
+                        <pre><code id="python2-code" class="language-python"></code></pre>
+                    </div>
+                    <div class="issues-list">
+                        <h4>⚠️ Issues & Limitations</h4>
+                        <ul id="python2-issues"></ul>
+                    </div>
+                </div>
+
+                <div class="code-panel python-3">
+                    <div class="panel-header">
+                        <h3>Python 3.14 (2025)</h3>
+                        <span class="version-badge modern">Modern</span>
+                    </div>
+                    <div class="code-container">
+                        <pre><code id="python3-code" class="language-python"></code></pre>
+                    </div>
+                    <div class="improvements-list">
+                        <h4>✨ Modern Features Used</h4>
+                        <ul id="python3-improvements"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-summary">
+                <h3>📈 Key Improvements</h3>
+                <div class="improvements-grid" id="improvements-grid"></div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="statistics-section" class="section">
+            <div class="stats-header">
+                <h2>📊 Python Evolution by the Numbers</h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-value" id="stat-years">24</div>
+                    <div class="stat-label">Years of Evolution</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔢</div>
+                    <div class="stat-value" id="stat-versions">24</div>
+                    <div class="stat-label">Major Versions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value">10x</div>
+                    <div class="stat-label">Performance Gain</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-value" id="stat-features">150+</div>
+                    <div class="stat-label">Major Features Added</div>
+                </div>
+            </div>
+
+            <div class="milestones">
+                <h3>🎯 Major Milestones</h3>
+                <div class="milestone-list">
+                    <div class="milestone">
+                        <div class="milestone-year">2001</div>
+                        <div class="milestone-content">
+                            <h4>Python 2.0.1 - The Beginning</h4>
+                            <p>Garbage collection, Unicode support, and list comprehensions</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2008</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.0 - The Great Split</h4>
+                            <p>Breaking changes for a cleaner, more consistent language</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2015</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.5 - Async Revolution</h4>
+                            <p>async/await syntax and type hints transform the ecosystem</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2016</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.6 - F-strings</h4>
+                            <p>String formatting revolutionized, mass adoption accelerates</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2021</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.10 - Pattern Matching</h4>
+                            <p>Structural pattern matching brings powerful control flow</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2024</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.13 - No GIL (Experimental)</h4>
+                            <p>Free-threaded Python and JIT compilation unlock new possibilities</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-year">2025</div>
+                        <div class="milestone-content">
+                            <h4>Python 3.14 - The Latest</h4>
+                            <p>Continued performance improvements and modern features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ using Python 3.14 | <a href="https://www.python.org" target="_blank">Python.org</a></p>
+        </footer>
+    </div>
+
+    <!-- Feature Example Modal -->
+    <div id="feature-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="feature-title"></h3>
+                <button class="modal-close" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="feature-description" id="feature-description"></div>
+                <div class="feature-code">
+                    <pre><code id="feature-code"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
