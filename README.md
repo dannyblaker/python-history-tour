@@ -10,7 +10,7 @@ An interactive visual journey through Python's evolution from version 2.0.1 (200
 - 💡 **Clickable Feature Examples**: Click any feature in the timeline to see a code example in a popup
 - ⚡ **Code Comparison**: See the dramatic improvements between Python 2.0.1 and 3.14 side-by-side
 - 📊 **Statistics Dashboard**: Visualize Python's growth over 24 years
-- 🎨 **Beautiful UI**: Modern, responsive design with smooth animations
+- 🎨 **A polished UI**: Modern, responsive design with smooth animations
 
 ## Quick Start
 
@@ -33,7 +33,7 @@ Then open your browser to: **http://localhost:5000**
 - Release dates and key features for each version
 - **Click any feature** to see a code example in a popup modal
 - Filter by Python 2.x or 3.x versions
-- Beautiful visual timeline with animations
+- Visual timeline with animations
 - Over 50 interactive feature examples with code snippets
 
 ### Code Comparison
