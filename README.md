@@ -47,12 +47,6 @@ Then open your browser to: **http://localhost:5000**
   - Context managers
   - And much more!
 
-### Statistics
-- 24 years of Python evolution
-- 24+ major versions
-- 10x performance improvements
-- 150+ major features added
-
 ## Project Structure
 
 ```
@@ -76,25 +70,6 @@ history_of_python/
 - **Backend**: Python 3.14, Flask
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Container**: Docker, Docker Compose
-- **Design**: Modern CSS Grid, Flexbox, Animations
-
-## Highlights
-
-### Python 2.0.1 (2001)
-- Garbage collection
-- Unicode support
-- List comprehensions
-- String methods
-
-### Python 3.14 (2025)
-- Free-threaded Python (no GIL)
-- JIT compiler
-- Type hints with Self and union operators
-- F-strings with enhanced parsing
-- Pattern matching
-- Dataclasses
-- Async/await
-- And so much more!
 
 ## Development
 
@@ -104,11 +79,3 @@ To run without Docker:
 pip install -r requirements.txt
 python app.py
 ```
-
-## License
-
-MIT License - Feel free to use and modify!
-
-## Author
-
-Created with ❤️ using Python 3.14
